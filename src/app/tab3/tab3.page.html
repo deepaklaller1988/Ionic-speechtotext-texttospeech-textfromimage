@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Document Scanner
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,10 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Document Scanner</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-img [src]="image"></ion-img>
+  <ion-button expand="full" (click)="scanDoc()">scanDoc</ion-button>
+  <ion-button expand="full" (click)="recText()">recText</ion-button>
 </ion-content>
